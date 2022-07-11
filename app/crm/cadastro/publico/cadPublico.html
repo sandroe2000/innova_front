@@ -1,0 +1,66 @@
+<div class="modal fade" id="cadPublicoModal" data-bs-backdrop="static">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Cadastro de Público</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div><!-- .modal-header -->
+            <div class="modal-body">
+                <form id="ifrmCadPublico">
+                    <div class="row">
+                        <div class="col-lg-2 form-group">
+                            <label><strong>id</strong></label>
+                            <input spapp-bind="id" id="id" type="text" class="form-control" />
+                        </div>
+                        <div class="col-lg-2 form-group">
+                            <label><strong>Corporativo</strong></label>
+                            <input spapp-bind="corporativo" id="corporativo" type="text" class="form-control border-top-info" />
+                        </div>   
+                        <div class="col form-group">
+                            <label><strong>Descricao</strong></label>
+                            <input spapp-bind="descricao" id="descricao" type="text" class="form-control border-top-info" />
+                        </div>                      
+                        <div class="col-auto form-check-inline nobr" style="position:relative; top: 26px">
+                            <input spapp-bind="inativo" id="inativo" type="checkbox" class="form-check-input" value="true" />
+                            <label class="form-check-label ps-1 nobr" for="buscaCorporativa">Inativo</label>
+                        </div> 
+                        <div class="col-auto d-flex justify-content-end">
+                            <button id="btnPesquisar" class="btn btn-outline-info" type="button" style="margin-top: 19px; height: 38px;" title="Pesquisar">
+                                <em class="fas fa-search"></em>
+                            </button>
+                            <button id="btnLimpar" type="button" class="btn btn-outline-white ms-2" style="margin-top: 19px; height: 38px;" title="Limpar">
+                                <em class="fas fa-eraser"></em>
+                            </button>
+                            <button id="btnGravar" type="button" class="btn btn-outline-theme ms-2" style="margin-top: 19px; height: 38px;" title="Gravar">
+                                <em class="fas fa-save"></em>
+                            </button>
+                        </div><!-- .col-auto"-->
+                    </div><!-- .row -->   
+                </form>                  
+                
+                <div class="row mt-2">
+                    <div class="col-lg-12">
+                        <div class="table-responsive tableFixHead scroll1">
+                            <table id="tblCadPublico" class="table table-hover mg-b-0" aria-describedby="Público">
+                                <thead>
+                                    <tr>
+                                        <th spapp-id="id" scope="col" class="wd-10p text-left nobr"># <em class="fas fa-sort-down"></em></th>
+                                        <th spapp-data="corporativo" scope="col" class="wd-15p text-left nobr">Corporativo <em class="fas fa-sort"></em></th>
+                                        <th spapp-data="descricao" scope="col" class="wd-50p text-left nobr">Descricao <em class="fas fa-sort"></em></th>
+                                        <th spapp-data="inativo" scope="col" class="wd-15p text-left nobr">Inativo <em class="fas fa-sort"></em></th>
+                                        <th spapp-trigger="delete,edit" scope="col" class="wd-10p text-right nobr">&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5" class="text-center p-5 nobr">Nenhum registro encontrado!</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- .table-responsive -->
+                    </div><!-- .col-lg-12"-->
+                </div><!-- .row -->  
+            </div><!-- .modal-body-->
+        </div><!-- .modal-content-->
+    </div><!-- .modal-dialog -->
+</div><!-- .modal-->

@@ -1,0 +1,80 @@
+<div class="modal fade" id="identidicacaoModal" data-bs-backdrop="static">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Identificação</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div><!-- .modal-header -->
+            <div class="modal-body">
+                <form id="frmIdentificacao">
+                    <div class="row">
+                        <div class="col-lg-2 form-group">
+                            <label><strong>Código</strong></label>
+                            <input spapp-bind="id" id="id" type="text" class="form-control border-top-info" />
+                        </div>
+                        <div class="col-lg-2 form-group">
+                            <label class="nobr"><strong>Corporativo</strong></label>
+                            <input spapp-bind="corporativo" id="codigoCorporativo" type="text" class="form-control border-top-info" />
+                        </div>
+                        <div class="col-lg-3 form-group">
+                            <label><strong>RG/IE</strong></label>
+                            <input spapp-bind="rgie" id="rgie type="text" class="form-control border-top-info" />
+                        </div>
+                        <div class="col-lg-3 form-group">
+                            <label><strong>CPF/CNPJ</strong></label>
+                            <input spapp-bind="cpf" id="cpf" type="text" class="form-control border-top-info" value=""/>
+                        </div>  
+                        <div class="col form-group">
+                            <label><strong>Nascimento</strong></label>
+                            <input spapp-bind="nascimento" id="nascimento" type="date" class="form-control border-top-info" />
+                        </div>                
+                    </div><!-- .row --> 
+                    <div class="row">
+                        <div class="col-lg-4 form-group">
+                            <label><strong>Nome</strong></label>
+                            <input spapp-bind="nome" id="nome" type="text" class="form-control border-top-info" />
+                        </div>
+                        <div class="col form-group">
+                            <label><strong>E-mail</strong></label>
+                            <input spapp-bind="email" id="email" type="email" class="form-control border-top-info" />
+                        </div>                        
+                        <div class="col-auto form-check-inline nobr" style="position:relative; top: 26px">
+                            <input spapp-bind="buscaCorporativa" id="buscaCorporativa" type="checkbox" class="form-check-input" value="true" />
+                            <label class="form-check-label ps-1 nobr" for="buscaCorporativa">Busca corporativa</label>
+                        </div> 
+                        <div class="col-auto d-flex justify-content-end">
+                            <button id="btnPesquisar" class="btn btn-outline-info" type="button" style="margin-top: 19px; height: 38px;" title="Pesquisar">
+                                <em class="fas fa-search"></em>
+                            </button>
+                            <button id="btnLimpar" type="button" class="btn btn-outline-white ms-2" style="margin-top: 19px; height: 38px;" title="Limpar">
+                                <em class="fas fa-eraser"></em>
+                            </button>
+                            <button id="btnCancelar"  type="button" class="btn btn-outline-default ms-2" data-bs-dismiss="modal" style="margin-top: 19px; height: 38px;" title="Cancelar">
+                                <em class="fas fa-ban"></em>
+                            </button>
+                        </div><!-- .col-auto"-->
+                    </div><!-- .row -->   
+                </form>                  
+                
+                <div class="row mt-2">
+                    <div class="col-lg-12">
+                        <div class="table-responsive tableFixHead scroll1">
+                            <table id="tblIdentificacao" class="table table-hover mg-b-0" aria-describedby="Identificação">
+                                <thead>
+                                    <tr>
+                                        <th spapp-id="id" scope="col" class="wd-10p text-left nobr"># <em class="fas fa-sort-down"></em></th>
+                                        <th spapp-data="corporativo" scope="col" class="wd-15p text-left nobr">Corporativo <em class="fas fa-sort"></em></th>
+                                        <th spapp-data="nome" scope="col" class="wd-50p text-left nobr">Nome <em class="fas fa-sort"></em></th>
+                                        <th spapp-data="nascimento" scope="col" class="wd-15p text-left nobr">Nascimento <em class="fas fa-sort"></em></th>
+                                        <th spapp-trigger="talk" scope="col" class="wd-10p text-right nobr">&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div><!-- .table-responsive -->
+                    </div><!-- .col-lg-12"-->
+                </div><!-- .row -->  
+            </div><!-- .modal-body-->
+        </div><!-- .modal-content-->
+    </div><!-- .modal-dialog -->
+</div><!-- .modal-->

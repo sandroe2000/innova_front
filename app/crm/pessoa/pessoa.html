@@ -1,0 +1,129 @@
+<form id="frmPessoa" style="margin-right: 15px;">
+    <h5>Dados Pessoais</h5>
+    <div class="row">
+        <!-- Dados Pessoais -->
+        <div class="col-lg-3 form-group">
+            <label>Público</label>
+            <select spapp-bind="tipoDePublico" id="publico.descricao" class="form-control form-select">
+                <option value="">Selecione</option>
+                <option value="CLIENTE COMUN">CLIENTE COMUN</option>
+                <option value="LIMINAR JUD.C/CARTA">LIMINAR JUD.C/CARTA</option>
+                <option value="LIMINAR JUDICIAL">LIMINAR JUDICIAL</option>
+                <option value="SEGURADO VITALICIO">SEGURADO VITALICIO</option>
+            </select>
+        </div>
+        <div class="col-lg-3 form-group">
+            <label>Status</label>
+            <input spapp-bind="status" id="status.descricao" type="text" class="form-control border-top-warning" disabled />
+        </div>
+        <div class="col-auto form-group fieldset-same-row" style="width: 150px !important">
+            <label class="nobr">Pessoa</label>
+            <select spapp-bind="tipoDePessoa" id="pfj" class="form-control form-select">
+                <option value="">Selecione</option>
+                <option value="FISICA">Fisica</option>
+                <option value="JURIDICA">Juridica</option>
+            </select>
+        </div>
+        <div class="col">
+            <label class="fieldset-label">Não contactar por</label>
+            <div class="fieldset-panel border-top-warning">                                    
+                <div class="row">
+                    <div class="col form-check-inline nobr" style="position:relative; top: 4px">
+                        <input spapp-bind="naocontactarEmail" id="naocontactar" type="checkbox" class="form-check-input" value="EMAIL" />
+                        <label class="form-check-label nobr" for="naocontactar">E-mail</label>
+                    </div>
+                    <div class="col form-check-inline nobr" style="position:relative; top: 4px">
+                        <input spapp-bind="naocontactarTelefone" id="naocontactar" type="checkbox" class="form-check-input" value="TELEFONE" />
+                        <label class="form-check-label nobr" for="naocontactar">Telefone</label>
+                    </div>
+                    <div class="col form-check-inline nobr" style="position:relative; top: 4px">
+                        <input spapp-bind="naocontactarWhatsApp" id="naocontactar" type="checkbox" class="form-check-input" value="WHATSAPP" />
+                        <label class="form-check-label nobr" for="naocontactar">WhatsApp</label>
+                    </div>
+                    <div class="col form-check-inline nobr" style="position:relative; top: 4px">
+                        <input spapp-bind="naocontactarSMS" id="naocontactar" type="checkbox" class="form-check-input" value="SMS" />
+                        <label class="form-check-label nobr" for="naocontactar">SMS</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- row -->
+    <div class="row">
+        <div class="col-lg-2 form-group">
+            <label>Código</label>
+            <input spapp-bind="id" id="id" type="text" class="form-control" disabled />
+        </div>
+        <div class="col-lg-2 form-group nobr">
+            <label>Corporativo</label>
+            <input spapp-bind="corporativo" id="corporativo" type="text" class="form-control" disabled />
+        </div>
+        <div class="col-lg-2 form-group">
+            <label>Tratamento</label>
+            <select spapp-bind="formaDeTratamento" id="formaDeTratamento" class="form-control form-select">
+                <option value="">Selecione</option>
+                <option value="1">Sr.</option>
+                <option value="2">Sr.a</option>
+                <option value="3">Você</option>
+            </select>
+        </div>
+        <div class="col-lg-4 form-group">
+            <label>Nome</label>
+            <input spapp-bind="nome" id="nome" type="text" class="form-control" />
+        </div>
+        <div class="col-lg-2 form-group">
+            <label>Sexo</label>
+            <select spapp-bind="sexo" id="sexo.descricao" class="form-control form-select">
+                <option value="">Selecione</option>
+                <option value="FEMININO">Feminino</option>
+                <option value="MASCULINO">Masculino</option>
+                <option value="OUTROS">Outros</option>
+            </select>
+        </div>
+    </div>
+    <!-- row -->
+    <div class="row">
+        <div class="col-lg-6 form-group">
+            <label>E-mail</label>
+            <input spapp-bind="email" id="email" spapp-bind="email" id="frmModalDadosPessoaisEmail" type="email" class="form-control" />
+        </div>
+        <div class="col-lg-3 form-group nobr">
+            <label>Telefone</label>
+            <input spapp-bind="telefone" id="telefone" type="text" class="form-control telefone" />
+        </div>
+        <div class="col-lg-3 form-group">
+            <label>Celular</label>
+            <div class="input-group">
+                <input spapp-bind="celular" id="celular" type="text" class="form-control telefone" />
+                <div class="input-group-text">
+                  <input spapp-bind="WhatsApp" id="WhatsApp" class="form-check-input mt-0" type="checkbox" value="S" title="WhatsApp" />
+                </div>
+            </div>
+        </div>                          
+    </div>
+    <!-- row -->
+    <div class="row">
+        <div class="col-lg-2 form-group">
+            <label>RG/IE</label>
+            <input spapp-bind="rg" id="rgie" type="text" class="form-control" />
+        </div>
+        <div class="col-lg-2 form-group">
+            <label>CPF/CNPJ</label>
+            <input spapp-bind="cpf" id="cpf" type="text" class="form-control telefone" />
+        </div>
+        <div class="col-lg-2 form-group">
+            <label>CNH</label>
+            <input spapp-bind="cnh" id="cnh" type="text" class="form-control" />
+        </div>
+        <div class="col-lg-3 form-group">
+            <label>Passaporte</label>
+            <input spapp-bind="passaporte" id="passaporte" type="text" class="form-control" />
+        </div>
+        <div class="col-lg-3 form-group">
+            <label>Nascimento</label>
+            <input spapp-bind="nascimento" id="nascimento" type="date" class="form-control" />
+        </div>
+    </div>
+    <!-- row -->
+</form>
+<div id="containerEndereco"></div>

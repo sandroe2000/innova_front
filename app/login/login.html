@@ -1,0 +1,66 @@
+<div id="app" class="app">
+
+    <div id="header" class="app-header">
+        <div class="desktop-toggler">
+            <button type="button" class="menu-toggler" data-toggle-class="app-sidebar-collapsed"
+                data-dismiss-class="app-sidebar-toggled" data-toggle-target=".app">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <div class="mobile-toggler">
+            <button type="button" class="menu-toggler" data-toggle-class="app-sidebar-mobile-toggled"
+                data-toggle-target=".app">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <div class="brand">
+            <a class="brand-logo">
+                <img src="/assets/css/images/Plusoft2.png" style="margin: 2px 0px;" /> 
+            </a>
+        </div>
+        <div class="menu">           
+            <img src="/assets/css/images/bra-seguros-rgb-white1.png" style="margin: 2px 0px;" />              
+        </div>        
+    </div>
+
+    <div class="login">
+
+        <div class="login-content">
+            <form method="POST" id="frmLogin" onsubmit="return false;">
+                <h1 class="text-center">Sign In</h1>
+                <div class="text-white text-opacity-50 text-center mb-4">
+                    For your protection, please verify your identity.
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email Address <span class="text-danger">*</span></label>
+                    <input spapp-bind="username" id="username" type="text" class="form-control form-control-lg bg-white bg-opacity-5" placeholder="" />
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex">
+                        <label class="form-label">Password <span class="text-danger">*</span></label>
+                        <a href="/#/esqueceuSenha" class="ms-auto text-white text-decoration-none text-opacity-50">Forgot password?</a>
+                    </div>
+                    <input spapp-bind="password" id="password" type="password" class="form-control form-control-lg bg-white bg-opacity-5" placeholder="" />
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="customCheck1" />
+                        <label class="form-check-label" for="customCheck1">Remember me</label>
+                    </div>
+                </div>
+                <button id="btnLogin" type="submit" class="btn btn-outline-theme btn-lg d-block w-100 fw-500 mb-3">Sign In</button>
+                <div class="text-center text-white text-opacity-50">
+                    Don't have an account yet? <a href="#">Sign up</a>. v0.1.0-a.1
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <a href="#" data-toggle="scroll-to-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+
+</div>

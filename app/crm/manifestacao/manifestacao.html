@@ -1,0 +1,323 @@
+<form id="frmManifestacao" style="margin-right: 15px;">
+    <!-- MANIFESTAÇÃO-->
+    <div class="row row-xs">
+        <div class="col-lg-12">
+            <h5 class="mg-b-5">Manifesto</h5>
+            <div class="row">
+                <div class="col-lg-4 form-group">
+                    <label class="tx-bold">Linha</label>
+                    <select class="form-control form-select">
+                        <option>Selecione</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 form-group">
+                    <label class="tx-bold">Manifestação</label>
+                    <select class="form-control form-select">
+                        <option>Selecione</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 form-group">
+                    <label class="tx-bold">Grupo Manifestação</label>
+                    <select class="form-control form-select">
+                        <option>Selecione</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 form-group">
+                    <label class="tx-bold">Produto/Assunto</label>
+                    <select class="form-control form-select">
+                        <option>Selecione</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 form-group">
+                    <label class="tx-bold">Variedade</label>
+                    <select class="form-control form-select">
+                        <option>Selecione</option>
+                    </select>
+                </div>                                
+                <div class="col-lg-4">
+                    <div class="row no-gutters">
+                        <div class="col form-group">
+                            <label class="tx-bold">Tipo Manifestação</label>
+                            <select class="form-control form-select" id="">
+                                <option>Selecione</option>
+                            </select>
+                        </div>
+                        <div class="col-auto form-group">
+                            <button class="btn btn-outline-theme ms-1" type="button" style="margin-top: 20px">
+                                <em class="fas fa-download"></em>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-lg-8 form-group">
+                    <label class="tx-bold">Descrição</label>
+                    <textarea id="manifestacaoDescricao" class="form-control isSummernote" style="height: 144px;"></textarea>
+                </div>
+                <div class="col-lg-4 form-group">
+                    <div>
+                        <label class="tx-bold">Funcionário</label>
+                        <input type="text" class="form-control" disabled />
+                    </div>
+                    <div class="col">
+                        <label class="tx-bold">Previsão Resolução</label>
+                        <input type="datetime-local" class="form-control" disabled />
+                    </div>
+                    <div class="col">
+                        <label class="tx-bold">Data Abertura</label>
+                        <input type="datetime-local" class="form-control" disabled />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 form-group">
+                    <label class="tx-bold">Estado Emocional</label>
+                    <select class="form-control form-select">
+                        <option>Selecione</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 form-group">
+                    <label class="tx-bold">Status da Manifestação</label>
+                    <select class="form-control form-select">
+                        <option>Selecione</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 form-group">
+                    <label class="tx-bold">Classificação</label>
+                    <select class="form-control form-select">
+                        <option>Selecione</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="table-responsive tableFixHead scroll1 mg-b-15 mt-3">
+                        <table class="table table-hover mg-b-0" aria-describedby="manifestacoes">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="wd-10p text-start nobr">Código <em class="fas fa-sort-down"></em></th>
+                                    <th scope="col" class="wd-20p text-start nobr">Funcionário <em class="fas fa-sort"></em></th>
+                                    <th scope="col" class="wd-20p text-start nobr">Produto/Assunto <em class="fas fa-sort"></em></th>
+                                    <th scope="col" class="wd-20p text-start nobr">Variedade <em class="fas fa-sort"></em></th>
+                                    <th scope="col" class="wd-25p text-start nobr">Tipo Manifestação <em class="fas fa-sort"></em></th>
+                                    <th scope="col" class="wd-5p text-end">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="1">
+                                    <td class="text-start nobr">123456</td>
+                                    <td class="text-start nobr">Mariane C. Di Espindula</td>
+                                    <td class="text-start nobr">Convenio Top</td>
+                                    <td class="text-start nobr">São Paulo</td>
+                                    <td class="text-start nobr">Solicitação</td>
+                                    <td class="text-end nobr">
+                                        <a class="ml-3" title="Editar Manifestação"><em class="fas fa-edit"></em></a>
+                                    </td>
+                                </tr>
+                                <tr id="2">
+                                    <td class="text-start nobr">123457</td>
+                                    <td class="text-start nobr">Marcela C. Di Espindula</td>
+                                    <td class="text-start nobr">Convenio Top</td>
+                                    <td class="text-start nobr">São Paulo</td>
+                                    <td class="text-start nobr">Reclamação</td>
+                                    <td class="text-end nobr">
+                                        <a class="ml-3" title="Editar Manifestação"><em class="fas fa-edit"></em></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table-responsive -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto"></div>
+                <div class="col">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-end pagination-space mt-2">
+                            <li class="page-item disabled"><a class="page-link page-link-icon" href="#"><em class="fas fa-chevron-left"></em> </a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item disabled"><a class="page-link page-link-icon" href="#"><em class="fas fa-chevron-right"></em> </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <h5>FollowUp</h5>                            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div>
+                        <label class="tx-bold">Mensagem</label>
+                        <textarea id="followUpMensagem" class="form-control isSummernote" style="height: 144px;"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div>
+                        <label class="tx-bold">Resposta</label>
+                        <textarea id="followUpMensagem" class="form-control isSummernote" disabled style="height: 144px;"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-4 form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label class="tx-bold">Evento</label>
+                            <select class="form-control form-select">
+                                <option>Selecione</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="tx-bold">Equipe</label>
+                            <select class="form-control form-select">
+                                <option>Selecione</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <label class="tx-bold">Funcionário</label>
+                            <select class="form-control form-select">
+                                <option>Selecione</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-outline-white ms-1" type="button" style="margin-top: 19px" title="Limpar">
+                                <em class="fas fa-eraser"></em>
+                            </button>
+                            <button class="btn btn-outline-theme" type="button" style="margin-top: 19px" title="Adicionar FollowUp">
+                                <em class="fas fa-download"></em>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="table-responsive tableFixHead scroll1 mg-b-15 mt-3">
+                        <table class="table table-hover mg-b-0" aria-describedby="followUps">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="wd-40p text-start nobr">Evento <em class="fas fa-sort-down"></em></th>
+                                    <th scope="col" class="wd-20p text-start nobr">De <em class="fas fa-sort"></em></th>
+                                    <th scope="col" class="wd-20p text-start nobr">Para <em class="fas fa-sort"></em></th>
+                                    <th scope="col" class="wd-15p text-start nobr">Previsão <em class="fas fa-sort"></em></th>
+                                    <th scope="col" class="wd-5p text-end">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="1" class="text-primary">
+                                    <td class="text-start nobr">Aguardando Analise</td>
+                                    <td class="text-start nobr">Analise Médica</td>
+                                    <td class="text-start nobr">Comunicação</td>
+                                    <td class="text-start nobr">01/12/2020 12:00</td>
+                                    <td class="text-end nobr">
+                                        <a class="ms-3" title="Anexar aquivos ao followUp"><em class="fas fa-upload"></em></a>
+                                        <a class="ms-3" title="Editar followUp"><em class="fas fa-edit"></em></a>
+                                    </td>
+                                </tr>
+                                <tr id="2" class="text-danger">
+                                    <td class="text-start nobr">Liberação de exames</td>
+                                    <td class="text-start nobr">Analise Médica</td>
+                                    <td class="text-start nobr">Suporte ao juridico</td>
+                                    <td class="text-start nobr">02/12/2020 12:00</td>
+                                    <td class="text-end nobr">
+                                        <a class="ms-3" title="Anexar aquivos ao followUp"><em class="fas fa-upload"></em></a>
+                                        <a class="ms-3" title="Editar followUp"><em class="fas fa-edit"></em></a>
+                                    </td>
+                                </tr>
+                                <tr id="3">
+                                    <td class="text-start nobr">Liberação de Reembolso</td>
+                                    <td class="text-start nobr">Suporte ao juridico</td>
+                                    <td class="text-start nobr">Analise Médica</td>
+                                    <td class="text-start nobr">03/12/2020 12:00</td>
+                                    <td class="text-end nobr">
+                                        <a class="ms-3" title="Anexar aquivos ao followUp"><em class="fas fa-upload"></em></a>
+                                        <a class="ms-3" title="Editar followUp"><em class="fas fa-edit"></em></a>
+                                    </td>
+                                </tr>
+                                <tr id="4">
+                                    <td class="text-start nobr">Liberação de Reembolso</td>
+                                    <td class="text-start nobr">Comunicação</td>
+                                    <td class="text-start nobr">Analise Médica</td>
+                                    <td class="text-start nobr">04/12/2020 12:00</td>
+                                    <td class="text-end nobr">
+                                        <a class="ms-3" title="Anexar aquivos ao followUp"><em class="fas fa-upload"></em></a>
+                                        <a class="ms-3" title="Editar followUp"><em class="fas fa-edit"></em></a>
+                                    </td>
+                                </tr>
+                                <tr id="5">
+                                    <td class="text-start nobr">Liberação de Reembolso</td>
+                                    <td class="text-start nobr">Comunicação</td>
+                                    <td class="text-start nobr">Analise Médica</td>
+                                    <td class="text-start nobr">04/12/2020 12:00</td>
+                                    <td class="text-end nobr">
+                                        <a class="ms-3" title="Anexar aquivos ao followUp"><em class="fas fa-upload"></em></a>
+                                        <a class="ms-3" title="Editar followUp"><em class="fas fa-edit"></em></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table-responsive -->
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row">
+                <div class="col-auto"></div>
+                <div class="col">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-end pagination-space mt-2">
+                            <li class="page-item disabled"><a class="page-link page-link-icon" href="#"><em class="fas fa-chevron-left"></em> </a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link page-link-icon" href="#"><em class="fas fa-chevron-right"></em> </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+             
+            <h5>Conclusão</h5>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div>
+                        <label class="tx-bold" for="descricaoConclusao">Descrição</label>
+                        <textarea id="descricaoConclusao" class="form-control isSummernote" style="height: 144px;"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-4 form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label class="tx-bold">Grau de Satisfação</label>
+                            <select class="form-control form-select">
+                                <option>Selecione</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="tx-bold">Resultado da Manifestação</label>
+                            <select class="form-control form-select">
+                                <option>Selecione</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="tx-bold">Data Conclusão</label>
+                            <input type="datetime-local" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- col -->
+    </div>
+    <!-- row -->
+</form>

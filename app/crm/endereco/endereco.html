@@ -1,0 +1,101 @@
+<form id="frmEndereco" style="margin-right: 15px;">
+    <input type="hidden" id="id" />
+    <input type="hidden" id="pessoa.id" />
+    <h5 class="mt-3">Endereço</h5>
+    <div class="row">
+        <div class="col-lg-2 form-group">            
+            <label class="tx-bold">CEP</label>
+            <input id="cep" type="text" class="form-control border-top-info" />                      
+        </div>
+        <div class="col-lg-4 form-group">
+            <div class="row no-gutters">
+                <div class="col form-group">
+                    <label>Logradouro</label>
+                    <div class="input-group">
+                        <input spapp-bind="logradouro" id="logradouro" type="text" class="form-control border-top-info" />
+                        <div class="input-group-text border-top-info">
+                            <input id="principal" class="form-check-input mt-0" type="checkbox" value="S" title="Endereço principal" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto form-group">
+                    <button class="btn btn-outline-info ms-1" type="button" id="btnPesquisaCEP" style="margin-top: 19px">
+                        <em class="fas fa-search"></em>
+                    </button>
+                </div>                
+            </div>            
+        </div>                                                        
+        <div class="col-auto form-group" style="width: 150px !important">
+            <label class="tx-bold">Número</label>
+            <input id="numero" type="text" class="form-control" />
+        </div>
+        <div class="col form-group">
+            <label>Complemento</label>                                
+            <input id="complemento" type="text" class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 form-group">
+            <label class="tx-bold">UF</label>
+            <select id="uf" class="form-control form-select">
+                <option>Selecione</option>
+            </select>
+        </div>
+        <div class="col-lg-4 form-group">
+            <label class="tx-bold">Cidade</label>
+            <select id="cidade" class="form-control form-select">
+                <option>Selecione</option>
+            </select>
+        </div>
+        <div class="col-lg-3 form-group">
+            <label class="tx-bold">Bairro</label>
+            <select id="bairro" class="form-control form-select">
+                <option>Selecione</option>
+            </select>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="row no-gutters">
+                <div class="col form-group">
+                    <label class="tx-bold">Tipo</label>
+                    <select id="tipo" class="form-control form-select">
+                        <option value="">Selecione</option>
+                        <option value="COMERCIAL">Comercial</option>
+                        <option value="RESIDENCIAL">Residencial</option>
+                    </select>
+                </div>
+                <div class="col-auto form-group">
+                    <button id="btnLimparEndereco" class="btn btn-outline-white ms-1" type="button" style="margin-top: 19px">
+                        <em class="fas fa-eraser"></em>
+                    </button>
+                    <button id="btnSalvarEndereco" class="btn btn-outline-theme" type="button" style="margin-top: 19px">
+                        <em class="fas fa-download"></em>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-xl-12">
+            <div class="table-responsive tableFixHead scroll1 mg-b-15 mt-3" data-scrollbar="true">
+                <table id="tblEndereco" class="table table-hover mg-b-0" aria-describedby="Tabela de Endereços">
+                    <thead>
+                        <tr>
+                            <th spapp-id="id" scope="col" class="wd-5p text-start nobr"># <em class="fas fa-sort-down"></em></th>
+                            <th spapp-data="tipo" scope="col" class="wd-10p text-start nobr">Tipo <em class="fas fa-sort-down"></em></th>
+                            <th spapp-data="logradouro" scope="col" class="wd-20p text-start nobr">Logradouro/Número <em class="fas fa-sort"></em></th>
+                            <th spapp-data="bairro" scope="col" class="wd-20p text-start nobr">Bairro <em class="fas fa-sort"></em></th>
+                            <th spapp-data="cidade" scope="col" class="wd-20p text-start nobr">Cidade <em class="fas fa-sort"></em></th>
+                            <th spapp-data="uf" scope="col" class="wd-10p text-start nobr">UF <em class="fas fa-sort"></em></th>
+                            <th spapp-data="cep" scope="col" class="wd-10p text-start nobr">CEP <em class="fas fa-sort"></em></th>
+                            <th spapp-trigger="delete,edit" scope="col" class="wd-5p text-end">&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <!-- table-responsive -->
+        </div>
+    </div>
+    <!-- row -->
+</form>
